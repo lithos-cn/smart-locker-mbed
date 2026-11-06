@@ -51,7 +51,7 @@ The native C++ control tests and driver tests pass, and the main program compile
 
 ## Demonstration and attribution
 
-[Course demonstration video](demo/course-demonstration.mp4) is retained from the original submission. It predates this maintenance revision and does not validate the revised firmware.
+[Course demonstration preview](demo/course-demonstration.mp4) is a full-length compressed copy of the original submission video. It predates this maintenance revision and does not validate the revised firmware. See [media details](demo/README.md) for provenance and encoding information.
 
 The saved course sources were revised to restore sensor integration, correct signed decoding and sensor mode configuration, remove blocking password feedback, and separate debounce state. A separate course team's example was consulted as a reference for the integration flow. That reference archive and the old project reports are not included. No separate open-source license is granted.
 

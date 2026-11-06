@@ -58,7 +58,8 @@ int main() {
     std::uint64_t next_acceleration = 0, next_temperature = 0, next_log = 0;
 
     while (true) {
-        const auto now = rtos::Kernel::get_ms_count();
+        const auto now = static_cast<std::uint64_t>(
+            rtos::Kernel::Clock::now().time_since_epoch().count());
         const bool one = first_button.update(button_one.read() == 0, now);
         const bool two = second_button.update(button_two.read() == 0, now);
         if (one || two) {

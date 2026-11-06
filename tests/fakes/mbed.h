@@ -80,7 +80,13 @@ namespace ThisThread {
 template<class Rep,class Period> void sleep_for(std::chrono::duration<Rep,Period>) {}
 }
 namespace rtos {
-namespace Kernel { inline std::uint64_t get_ms_count() { return 0; } }
+namespace Kernel {
+struct Clock {
+    static std::chrono::time_point<std::chrono::steady_clock,std::chrono::milliseconds> now() {
+        return {};
+    }
+};
+}
 class EventFlags {
 public:
     std::uint32_t set(std::uint32_t) { return 0; }
