@@ -1,0 +1,19 @@
+# Local dependencies and generated outputs
+mbed-os/
+BUILD/
+build/
+cmake_build/
+.mbedbuild/
+.vscode/
+.idea/
+*.bin
+*.elf
+*.hex
+*.o
+*.map
+__pycache__/
+.local-notes/
+work/
+Thumbs.db
+Desktop.ini
+.DS_Store
